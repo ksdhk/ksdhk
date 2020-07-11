@@ -7,7 +7,7 @@ public class scanner {
 	public static void main(String[] args) {
 	Scanner scanner = new Scanner(System.in);
 		
-		System.out.println("µÎÀÚ¸® Á¤¼ö¸¦ ÇÏ³ª ÀÔ·ÂÇÏ¼¼¿ä>");
+		System.out.println("ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï³ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½>");
 		
 	    String a = scanner.nextLine();
 	    String b = scanner.nextLine();

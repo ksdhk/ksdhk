@@ -1,3 +1,4 @@
+package solution;
 
 public class PROGRAMMERS {
 	    public int[] solution(int[] answers) {
