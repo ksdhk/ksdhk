@@ -1,42 +1,41 @@
 package solution;
 
-import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class Bakjun_1181{
-	public static void main(String[] args) throws Exception {
-
-		Scanner sc = new Scanner(System.in);
-		int T = sc.nextInt();
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);	
+		
+		int n= sc.nextInt();
+		
+		String arr[][]=new String[n][2]; // 나이, 이름
+		
+		for(int i=0;i<arr.length;i++) {
+			for(int j=0;j<2;j++) {
+				arr[i][j] = sc.next();			
+			}
+			
+		}
 	
-		String[] a=new String[T];
 		
-		String ent= sc.nextLine();
-		
-		for(int i=0;i<T;i++) {
+		Arrays.sort(arr,new Comparator<String[]>() { // 0:나이 , 1:이름
+
+			@Override
+			public int compare(String[] o1,String[] o2) {
+											
+					return Integer.compare(Integer.parseInt(o1[0]), Integer.parseInt(o2[0]));
 			
-			 a[i]= sc.nextLine();
+			}		
 			
-			
+		});
+		
+		for(int i=0;i<arr.length;i++) {
+	
+				System.out.println(arr[i][0]+" "+arr[i][1]);
+		
 		}
 		
-		Arrays.sort(a);
-		ArrayList<String> list = new ArrayList<String>();
-		
-		for(int i=0;i<51;i++) {
-		for(int j=0;j<T;j++) {
-		if(i==a[j].length()&&!list.contains(a[j])) {			
-			list.add(a[j]);
-		}			
-		}
-		}
-		
-		for(int i=0;i<list.size();i++) {
-			System.out.println(list.get(i));
-		}
-		
-		
-		sc.close();
 	}
 }
