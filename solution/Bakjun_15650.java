@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Scanner;
 
-	public class Bakjun_15469 {
+	public class Bakjun_15650 {
 	    static boolean[] c = new boolean[10]; 
 	    static int[] a = new int[10]; 
 	    
